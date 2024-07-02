@@ -68,10 +68,10 @@ export const handleSubmenuItemSelectedHook = (item: View): boolean => {
     case ModsMenuItemId.DINO:
       if(document.querySelector("#dino-game")) return true;
       const div = document.createElement("div");
-      div.style.zIndex = /* max css */ "2147483647";
       div.id = "dino-game";
       const iframe = document.createElement("iframe");
       iframe.src = "static/dino.html";
+      iframe.style.zIndex = /* almost max css */ "2147483646";
       iframe.style.position = "absolute";
       iframe.style.top = "0";
       iframe.style.left = "0";
@@ -81,6 +81,7 @@ export const handleSubmenuItemSelectedHook = (item: View): boolean => {
       div.appendChild(iframe);
       const closeButton = document.createElement("button");
       closeButton.innerText = "Close";
+      closeButton.style.zIndex = /* max css */ "2147483647";
       closeButton.style.position = "absolute";
       closeButton.style.bottom = "0";
       closeButton.style.left = "0";
