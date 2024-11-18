@@ -1,6 +1,6 @@
 {
   "name": "superbird-webapp",
-  "version": "0.39.11+decomp",
+  "version": "8.9.2+decomp",
   "type": "module",
   "scripts": {
     "dev": "vite",
