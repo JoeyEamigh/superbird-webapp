@@ -1,0 +1,34 @@
+@import 'style/variables.module';
+
+.licenses {
+  width: $device-width;
+  height: $device-height;
+  background-color: $white;
+  color: $black;
+  padding: 42px;
+}
+
+.header {
+  width: $device-width;
+  margin-bottom: 42px;
+}
+
+$line-height: 12;
+
+.pretext {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.textAsList {
+  white-space: pre-wrap;
+  font-size: 12px;
+  font-family: monospace;
+  line-height: $line-height + px;
+}
+
+:export {
+  line-height: $line-height;
+}

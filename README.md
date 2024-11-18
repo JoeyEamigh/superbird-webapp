@@ -1,6 +1,6 @@
-# `superbird-webapp`
+# `superbird-webapp` (updated to 9.8.2)
 
-This repo contains the reconstructed source code for the Spotify Car Thing (Superbird)'s frontend webapp. It has been put together using the sourcemaps found on the device's storage. The webapp itself was written with React, TypeScript, MobX, and Sass. 
+This repo contains the reconstructed source code for the Spotify Car Thing (Superbird)'s frontend webapp. It has been put together using the sourcemaps found on the device's storage. The webapp itself was written with React, TypeScript, MobX, and Sass.
 
 The reconstruction is not perfect, but it should be pretty close, to the point where you can swap out the original source on the device for the compiled version of this repo and everything acts identically. Notable differences include
 

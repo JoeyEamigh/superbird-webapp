@@ -6,7 +6,7 @@ import legacy from '@vitejs/plugin-legacy';
 
 const absolutePathAliases: { [key: string]: string } = {};
 // Root resources folder
-const srcPath = path.resolve('./');
+const srcPath = path.resolve('./src');
 const srcRootContent = readdirSync(srcPath, { withFileTypes: true }).map((dirent) => dirent.name.replace(/(\.ts|\.js)(x?)/, ''));
 
 srcRootContent.forEach((directory) => {
@@ -25,5 +25,12 @@ export default defineConfig({
         targets: ['Chrome 69']
       }),
       react()
-  ]
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ["legacy-js-api", "import"],
+      },
+    },
+  },
 });
