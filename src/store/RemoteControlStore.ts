@@ -100,6 +100,8 @@ class RemoteControlStore {
         this.transportConnected = msg.payload;
         if (!this.transportConnected) {
           this.interappConnected = false;
+          this.lastMacAddress = this.macAddress;
+          this.macAddress = '';
         }
         break;
       default:
