@@ -91,7 +91,8 @@ class MiddlewareActions {
   }
 
   pitstopLog(message: PitstopDisconnectedTimeEvent) {
-    this.socket.post({ type: 'log', action: 'pitstop_log', message });
+    return Promise.resolve();
+    // this.socket.post({ type: 'log', action: 'pitstop_log', message });
   }
 
   factoryReset() {

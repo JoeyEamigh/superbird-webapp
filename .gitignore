@@ -41,3 +41,7 @@ next-env.d.ts
 
 # nix
 /result
+
+# other package managers for non-bun PLEBS
+package-lock.json
+yarn.lock

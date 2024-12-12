@@ -449,15 +449,16 @@ class InterappActions {
   }
 
   pitstopLog(event: PitstopLogEvent) {
-    return this.middlewareRequest
-      .request(
-        InterappMethods.PitstopLog,
-        {
-          logs: [event],
-        },
-        false,
-      )
-      .catch(() => {});
+    return Promise.resolve();
+    // return this.middlewareRequest
+    //   .request(
+    //     InterappMethods.PitstopLog,
+    //     {
+    //       logs: [event],
+    //     },
+    //     false,
+    //   )
+    //   .catch(() => {});
   }
 
   crashReport(serial: string, appVersion: string, osVersion: string, payload: IBacktraceData) {

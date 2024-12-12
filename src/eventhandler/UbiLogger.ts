@@ -87,25 +87,8 @@ class UbiLogger {
     this.hardwareStore = hardwareStore;
     this.restartTimer();
 
-    this.hardwareStore.onRebooting(() => this.sendLogBatch());
-    this.ubiLogger = new UBILogger({
-      eventSender: {
-        send: event => {
-          if (this.isInteraction(event)) {
-            this.interactions.push({
-              event: event,
-              timestamp: Date.now(),
-            });
-          } else if (this.isImpression(event)) {
-            this.impressions.push({
-              event: event,
-              timestamp: Date.now(),
-            });
-          }
-          this.sendBatchIfLimitReached();
-        },
-      },
-    });
+    this.hardwareStore.onRebooting(() => {});
+    this.ubiLogger = new UBILogger({ eventSender: { send: event => {} } });
   }
 
   isInteraction = (event: UbiEvent): event is UbiProd1InteractionEvent => {
@@ -117,46 +100,22 @@ class UbiLogger {
   };
 
   logInteraction = (event: UBIInteractionEvent): string => {
-    const interactionId = this.ubiLogger.logInteraction(event);
-    return interactionId;
+    return 'no.';
   };
 
   logImpression = (event: UBIImpressionEvent): string => {
-    return this.ubiLogger.logImpression(event);
+    return 'no.';
   };
 
-  sendLogBatch = () => {
-    if (this.isSending || this.logCount() <= 0) {
-      return;
-    }
-    this.isSending = true;
-    this.interappActions.sendUbiBatch(this.interactions, this.impressions);
-    this.clearQueue();
-    this.isSending = false;
-  };
+  sendLogBatch = () => {};
 
-  private restartTimer = () => {
-    if (this.timerId) {
-      clearInterval(this.timerId);
-    }
-    this.timerId = window.setInterval(this.sendLogBatch, INTERVAL_BATCH_LOG_MS);
-  };
+  private restartTimer = () => {};
 
-  private sendBatchIfLimitReached = () => {
-    if (this.logCount() >= BATCH_SIZE_LIMIT) {
-      this.sendLogBatch();
-      this.restartTimer();
-    }
-  };
+  private sendBatchIfLimitReached = () => {};
 
-  clearQueue = () => {
-    this.interactions.splice(0, this.interactions.length);
-    this.impressions.splice(0, this.impressions.length);
-  };
+  clearQueue = () => {};
 
-  private logCount = () => {
-    return this.interactions.length + this.impressions.length;
-  };
+  private logCount = () => {};
 }
 
 export default UbiLogger;
