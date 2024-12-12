@@ -294,7 +294,8 @@ class InterappActions {
   }
 
   requestLog(logs: Array<RequestLog>) {
-    return this.doRequest(InterappMethods.RequestLog, { logs }, false);
+    return Promise.resolve();
+    // return this.doRequest(InterappMethods.RequestLog, { logs }, false);
   }
 
   /**
@@ -418,34 +419,37 @@ class InterappActions {
   }
 
   sendUbiInteraction(event: UbiProd1InteractionEvent) {
-    return this.doRequest(InterappMethods.SendUbiInteraction, event.data);
+    return Promise.resolve();
+    // return this.doRequest(InterappMethods.SendUbiInteraction, event.data);
   }
 
   sendUbiImpression(event: UbiProd1ImpressionEvent) {
-    return this.doRequest(InterappMethods.SendUbiImpression, event.data, false);
+    return Promise.resolve();
+    // return this.doRequest(InterappMethods.SendUbiImpression, event.data, false);
   }
 
   sendUbiBatch(interactions: Array<UbiInteraction>, impressions: Array<UbiImpression>) {
-    return this.doRequest(
-      InterappMethods.SendUbiBatch,
-      {
-        interactions: interactions.map(i => i.event.data),
-        impressions: impressions.map(i => i.event.data),
-        interaction_timestamps: interactions.map(i => {
-          return {
-            timestamp: i.timestamp,
-            interaction_id: i.event.data.interaction_id || '',
-          };
-        }),
-        impression_timestamps: impressions.map(i => {
-          return {
-            timestamp: i.timestamp,
-            impression_id: i.event.data.impression_id || '',
-          };
-        }),
-      },
-      false,
-    );
+    return Promise.resolve();
+    // return this.doRequest(
+    //   InterappMethods.SendUbiBatch,
+    //   {
+    //     interactions: interactions.map(i => i.event.data),
+    //     impressions: impressions.map(i => i.event.data),
+    //     interaction_timestamps: interactions.map(i => {
+    //       return {
+    //         timestamp: i.timestamp,
+    //         interaction_id: i.event.data.interaction_id || '',
+    //       };
+    //     }),
+    //     impression_timestamps: impressions.map(i => {
+    //       return {
+    //         timestamp: i.timestamp,
+    //         impression_id: i.event.data.impression_id || '',
+    //       };
+    //     }),
+    //   },
+    //   false,
+    // );
   }
 
   pitstopLog(event: PitstopLogEvent) {
@@ -462,18 +466,19 @@ class InterappActions {
   }
 
   crashReport(serial: string, appVersion: string, osVersion: string, payload: IBacktraceData) {
-    return this.middlewareRequest
-      .request(
-        InterappMethods.CrashReport,
-        {
-          serial,
-          version_software: appVersion,
-          version_os: osVersion,
-          json: payload,
-        },
-        false,
-      )
-      .catch(() => {});
+    return Promise.resolve();
+    // return this.middlewareRequest
+    //   .request(
+    //     InterappMethods.CrashReport,
+    //     {
+    //       serial,
+    //       version_software: appVersion,
+    //       version_os: osVersion,
+    //       json: payload,
+    //     },
+    //     false,
+    //   )
+    //   .catch(() => {});
   }
 }
 
