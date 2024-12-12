@@ -10,9 +10,6 @@ const Main = () => {
 
   useEffect(() => {
     setTimeout(() => overlayController.maybeShowAModal(), 2000);
-    if (remoteConfigStore.sunsetInfoNag || remoteConfigStore.sunsetInfo) {
-      overlayController.showSunsetInfo();
-    }
   }, [overlayController, remoteConfigStore]);
 
   const handlePointerDown = action(() => {

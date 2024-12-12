@@ -38,8 +38,6 @@ const reactToDial = (hardwareEvents: HardwareEvents, rootStore: RootStore) => {
     }
     if (overlayController.anyOverlayIsShowing) {
       overlayController.handleDialPress();
-    } else if (remoteConfigStore.sunset) {
-      return;
     } else {
       switch (viewStore.currentView) {
         case View.CONTENT_SHELF:
@@ -122,8 +120,6 @@ const reactToDial = (hardwareEvents: HardwareEvents, rootStore: RootStore) => {
     }
     if (overlayController.anyOverlayIsShowing) {
       overlayController.handleDialLeft();
-    } else if (remoteConfigStore.sunset) {
-      return;
     } else {
       switch (viewStore.currentView) {
         case View.CONTENT_SHELF:
@@ -157,8 +153,6 @@ const reactToDial = (hardwareEvents: HardwareEvents, rootStore: RootStore) => {
     }
     if (overlayController.anyOverlayIsShowing) {
       overlayController.handleDialRight();
-    } else if (remoteConfigStore.sunset) {
-      return;
     } else {
       switch (viewStore.currentView) {
         case View.CONTENT_SHELF:

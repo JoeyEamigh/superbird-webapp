@@ -23,9 +23,6 @@ export const DEFAULT_REMOTE_CONFIG = {
   enable_push_to_talk_shelf: false,
   non_spotify_playback_ios: false,
   graphql_for_shelf_enabled: false,
-  sunset_info_screen: false,
-  sunset_kill_switch: false,
-  sunset_info_screen_nag: false,
 };
 
 export type RemoteConfig = typeof DEFAULT_REMOTE_CONFIG;
@@ -117,18 +114,6 @@ class RemoteConfigStore {
 
   get pushToTalkShelfEnabled(): boolean {
     return this.remoteConfig.enable_push_to_talk_shelf;
-  }
-
-  get sunsetInfo(): boolean {
-    return this.remoteConfig.sunset_info_screen;
-  }
-
-  get sunsetInfoNag(): boolean {
-    return this.remoteConfig.sunset_info_screen_nag;
-  }
-
-  get sunset(): boolean {
-    return this.remoteConfig.sunset_kill_switch;
   }
 
   reset() {

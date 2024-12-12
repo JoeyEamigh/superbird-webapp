@@ -10,7 +10,6 @@ export enum AppView {
   OTA,
   MAIN,
   ONBOARDING,
-  SUNSET,
   NOTHING, // before we have info needed to decide what to show.
 }
 
@@ -94,14 +93,12 @@ class ViewStore {
   }
 
   get appView(): AppView {
-    const { setupStore, onboardingStore, hardwareStore, otaStore, persistentStorage, remoteConfigStore } =
-      this.rootStore;
+    const { setupStore, onboardingStore, hardwareStore, otaStore, persistentStorage } = this.rootStore;
 
     // console.log(
     //   `setupStore.hasStatusMessage: ${setupStore.hasStatusMessage}\n` +
     //     `onboardingStore.onboardingMsgReceived: ${onboardingStore.onboardingMsgReceived}\n` +
     //     `persistentStorage.seeded: ${persistentStorage.seeded}\n` +
-    //     `remoteConfigStore.sunset: ${remoteConfigStore.sunset}\n` +
     //     `hardwareStore.rebooting: ${hardwareStore.rebooting}\n` +
     //     `setupStore.shouldShowSetup: ${setupStore.shouldShowSetup}\n` +
     //     `otaStore.criticalUpdate: ${otaStore.criticalUpdate}\n` +
@@ -111,9 +108,6 @@ class ViewStore {
 
     if (!setupStore.hasStatusMessage || !onboardingStore.onboardingMsgReceived || !persistentStorage.seeded) {
       return AppView.NOTHING;
-    }
-    if (remoteConfigStore.sunset) {
-      return AppView.SUNSET;
     }
 
     if (hardwareStore.rebooting) {

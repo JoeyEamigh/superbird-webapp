@@ -18,8 +18,7 @@ export type Overlay =
   | 'non_supported_type'
   | 'standby'
   | 'save_preset_error'
-  | 'no_network'
-  | 'sunset_info';
+  | 'no_network';
 
 export const MODAL_DELAY = 3000;
 export const DEFAULT_PRESET_TIMEOUT = 4_000;
@@ -113,10 +112,6 @@ class OverlayUiState {
     this.timeoutId = window.setTimeout(() => {
       this.resetAndMaybeShowAModal();
     }, STANDBY_TIMEOUT);
-  }
-
-  showSunsetInfo(): void {
-    this.showOverlay('sunset_info');
   }
 
   hideSettings = () => {

@@ -10,16 +10,12 @@ import SavingPresetFailed from 'component/Presets/SavingPresetFailed';
 import { useStore } from 'context/store';
 import { observer } from 'mobx-react-lite';
 import NoNetwork from 'component/Modals/NoNetwork';
-import SunsetInfo from 'component/Modals/SunsetInfo';
 
 const Modal = () => {
   const { overlayController } = useStore();
 
   return (
     <>
-      <Overlay appear={FROM.FADE_IN} show={overlayController.isShowing('sunset_info')}>
-        <SunsetInfo />
-      </Overlay>
       <Overlay appear={FROM.FADE_IN} show={overlayController.isShowing('lets_drive')}>
         <LetsDrive />
       </Overlay>

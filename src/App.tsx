@@ -12,7 +12,6 @@ import Onboarding from './component/Onboarding/Onboarding';
 
 import { AppView } from 'store/ViewStore';
 import RootErrorBoundary from 'component/RootErrorBoundary/RootErrorBoundary';
-import Sunset from './component/Modals/Sunset';
 
 const App = () => {
   const { onboardingStore, viewStore, nightModeController } = useStore();
@@ -43,7 +42,6 @@ const App = () => {
             [AppView.OTA]: <OtaUpdating />,
             [AppView.ONBOARDING]: <Onboarding />,
             [AppView.MAIN]: <Main />,
-            [AppView.SUNSET]: <Sunset />,
           }[viewStore.appView]
         }
       </RootErrorBoundary>

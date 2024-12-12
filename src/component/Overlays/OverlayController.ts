@@ -46,10 +46,6 @@ export const createOverlayController = (rootStore: RootStore, ubiLogger: UbiLogg
       this.overlayUiState.showStandby();
     },
 
-    showSunsetInfo(): void {
-      this.overlayUiState.showSunsetInfo();
-    },
-
     resetAndMaybeShowAModal(): void {
       this.overlayUiState.resetAndMaybeShowAModal();
     },
