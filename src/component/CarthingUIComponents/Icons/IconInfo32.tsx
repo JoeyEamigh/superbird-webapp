@@ -1,4 +1,4 @@
-import { IconInformationAlt } from '@spotify-internal.old/encore-web';
+import { IconInformationAlt } from '@spotify-internal/encore-web';
 
 const IconInfo32 = () => <IconInformationAlt iconSize={32} />;
 

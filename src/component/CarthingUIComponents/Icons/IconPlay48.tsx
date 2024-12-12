@@ -1,4 +1,4 @@
-import { IconPlay } from '@spotify-internal.old/encore-web';
+import { IconPlay } from '@spotify-internal/encore-web';
 
 const IconPlay48 = () => <IconPlay iconSize={48} />;
 

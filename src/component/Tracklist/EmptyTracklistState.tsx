@@ -1,5 +1,5 @@
 import styles from './Tracklist.module.scss';
-import { isPlaylistV1OrV2URI } from '@spotify-internal.old/uri';
+import { isPlaylistV1OrV2URI } from '@spotify-internal/uri';
 import { isCollectionUri, isNewEpisodesUri, isYourEpisodesUri } from 'helpers/SpotifyUriUtil';
 
 const getTextBasedOnUri = (uri: string): string => {

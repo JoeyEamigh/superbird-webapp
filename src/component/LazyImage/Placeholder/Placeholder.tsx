@@ -1,19 +1,12 @@
-import {
-  IconPlaylist,
-  IconTrack,
-  IconAlbum,
-  IconPodcasts,
-  IconArtist,
-  IconRadio,
-} from '@spotify-internal.old/encore-web';
-import { parseURI, URITypeMap } from '@spotify-internal.old/uri';
+import { IconPlaylist, IconTrack, IconAlbum, IconPodcasts, IconArtist, IconRadio } from '@spotify-internal/encore-web';
+import { parseURI, URITypeMap } from '@spotify-internal/uri';
 import classNames from 'classnames';
 import { getImageBorderRadius } from 'component/LazyImage/LazyImage';
 import { useStore } from 'context/store';
 import { isLikedSongsURI } from 'helpers/SpotifyUriUtil';
 import { observer } from 'mobx-react-lite';
 import styles from './Placeholder.module.scss';
-import { IconSize } from '@spotify-internal.old/encore-web/types/src/core/components/Icon/Svg';
+import { IconSize } from '@spotify-internal/encore-web/types/src/core/components/Icon/Svg';
 
 type Props = {
   uri: string;
@@ -75,8 +68,7 @@ const Placeholder = ({ uri, size, onClick, scale = 5, isActive }: Props) => {
         if (onClick) {
           onClick(e);
         }
-      }}
-    >
+      }}>
       <div className={styles.placeholderIcon} style={{ transform: `scale(${scale})` }}>
         {icon}
       </div>

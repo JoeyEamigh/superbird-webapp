@@ -1,4 +1,4 @@
-import { IconGears } from '@spotify-internal.old/encore-web';
+import { IconGears } from '@spotify-internal/encore-web';
 
 const IconGears64 = () => <IconGears iconSize={64} />;
 

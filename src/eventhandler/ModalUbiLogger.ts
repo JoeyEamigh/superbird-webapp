@@ -1,11 +1,11 @@
 import UbiLogger from './UbiLogger';
-import { createCarNonCriticalOtaModalCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-non-critical-ota-modal-carthingos';
-import { createCarSetupCriticalOtaCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-setup-critical-ota-carthingos';
-import { createCarLetsDriveModalCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-lets-drive-modal-carthingos';
-import { createCarPinPairingCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-pin-pairing-carthingos';
-import { createCarNoBluetoothConnectionCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-no-bluetooth-connection-carthingos';
-import { createCarNeedPremiumModalCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-need-premium-modal-carthingos';
-import { createCarSettingsPowerModalCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-settings-power-modal-carthingos';
+import { createCarNonCriticalOtaModalCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-non-critical-ota-modal-carthingos';
+import { createCarSetupCriticalOtaCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-setup-critical-ota-carthingos';
+import { createCarLetsDriveModalCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-lets-drive-modal-carthingos';
+import { createCarPinPairingCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-pin-pairing-carthingos';
+import { createCarNoBluetoothConnectionCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-no-bluetooth-connection-carthingos';
+import { createCarNeedPremiumModalCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-need-premium-modal-carthingos';
+import { createCarSettingsPowerModalCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-settings-power-modal-carthingos';
 import { MainMenuItemId } from 'store/SettingsStore';
 
 class ModalUbiLogger {

@@ -1,4 +1,4 @@
-import { IconSearch } from '@spotify-internal.old/encore-web';
+import { IconSearch } from '@spotify-internal/encore-web';
 
 const IconSearch32 = () => <IconSearch iconSize={32} />;
 

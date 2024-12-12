@@ -2,7 +2,7 @@ import { useStore } from 'context/store';
 import { useState } from 'react';
 import styles from './PhoneConnection.module.scss';
 import { observer } from 'mobx-react-lite';
-import { IconMore } from '@spotify-internal.old/encore-web';
+import { IconMore } from '@spotify-internal/encore-web';
 
 import classNames from 'classnames';
 import Spinner, { SpinnerSize } from 'component/CarthingUIComponents/Spinner/Spinner';
@@ -35,19 +35,16 @@ const PhoneConnectionItem = ({ phoneName, phoneAddress, isActive, isConnected, i
         [styles.pressed]: (hardwareStore.dialPressed && isActive) || pressedPhoneItem,
       })}
       {...pointerListenersMaker(setPressedPhoneItem)}
-      data-testid={`phone-connection-item-${phoneAddress}`}
-    >
+      data-testid={`phone-connection-item-${phoneAddress}`}>
       <div
         className={styles.titles}
         onClick={action(() => phoneConnectionStore.handleSelectPhoneClick(device))}
-        data-testid={isActive ? 'selected-phone' : ''}
-      >
+        data-testid={isActive ? 'selected-phone' : ''}>
         <span className={styles.title}>{phoneName}</span>
         <span
           className={classNames(styles.subtitle, {
             [styles.connected]: isConnected,
-          })}
-        >
+          })}>
           <span className={styles.subtitleText}>{displayConnectionStatus}</span>
           {isConnecting && <Spinner size={SpinnerSize.SMALL} />}
         </span>
@@ -55,8 +52,7 @@ const PhoneConnectionItem = ({ phoneName, phoneAddress, isActive, isConnected, i
       <div
         onClick={action(() => phoneConnectionStore.phoneConnectionContextMenuUiState.handleContextMenuClick(device))}
         data-testid={`${phoneName}-menu`}
-        className={styles.menuButton}
-      >
+        className={styles.menuButton}>
         <IconMore className={styles.menuIcon} />
       </div>
     </div>

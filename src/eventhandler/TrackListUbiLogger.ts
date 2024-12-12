@@ -1,4 +1,4 @@
-import { createCarTrackViewCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-track-view-carthingos/CarTrackViewCarthingosEventFactory';
+import { createCarTrackViewCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-track-view-carthingos/CarTrackViewCarthingosEventFactory';
 import UbiLogger from './UbiLogger';
 
 class TrackListUbiLogger {

@@ -1,7 +1,7 @@
 import { makeAutoObservable, reaction, runInAction } from 'mobx';
 import { transitionDurationMs } from 'style/Variables';
 import { isTrackOrEpisode } from 'helpers/SpotifyUriUtil';
-import { isShowURI } from '@spotify-internal.old/uri';
+import { isShowURI } from '@spotify-internal/uri';
 import {
   getShelfFeatureIdentifierForTrackOrEpisode,
   setTrackViewVoiceFeatureIdentifier,

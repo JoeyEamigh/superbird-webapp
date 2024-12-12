@@ -2,7 +2,7 @@ import styles from './PhoneCall.module.scss';
 import { observer } from 'mobx-react-lite';
 import Type from 'component/CarthingUIComponents/Type/Type';
 import { useStore } from 'context/store';
-import { IconUserAltCircle } from '@spotify-internal.old/encore-web';
+import { IconUserAltCircle } from '@spotify-internal/encore-web';
 import AmbientBackdrop from 'component/AmbientBackdrop/AmbientBackdrop';
 import { useEffect } from 'react';
 import PhoneCallTimer from 'component/PhoneCall/PhoneCallTimer';

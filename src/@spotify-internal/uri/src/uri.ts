@@ -6,7 +6,7 @@ import { URIParticle } from './enums/uri_particle';
 import { TypedURI } from './uri_typedefs';
 import { parse } from './_internal/parser';
 import { getComponents } from './_internal/utils';
-import { idToHex } from './utils';
+// import { idToHex } from './utils';
 declare global {
   interface ObjectConstructor {
     assign<T, U>(target: T, source: U): T & U;
@@ -233,6 +233,6 @@ export function parseURI(
  * @param uri - The target URI.
  * @return The ID hex-encoded
  */
-export function getURIHexId(uri: URI & { id?: string }): string | null {
-  return uri.hasBase62Id && uri.id ? idToHex(uri.id) : null;
-}
+// export function getURIHexId(uri: URI & { id?: string }): string | null {
+//   return uri.hasBase62Id && uri.id ? idToHex(uri.id) : null;
+// }

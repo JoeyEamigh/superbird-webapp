@@ -1,5 +1,5 @@
-import { IconSize } from '@spotify-internal.old/encore-web/types/src/core/components/Icon/Svg';
-import { IconCollectionActive } from '@spotify-internal.old/encore-web';
+import { IconSize } from '@spotify-internal/encore-web/types/src/core/components/Icon/Svg';
+import { IconCollectionActive } from '@spotify-internal/encore-web';
 
 type Props = {
   iconSize: IconSize;

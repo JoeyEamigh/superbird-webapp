@@ -1,4 +1,4 @@
-import { IconBluetooth, IconX } from '@spotify-internal.old/encore-web';
+import { IconBluetooth, IconX } from '@spotify-internal/encore-web';
 import classNames from 'classnames';
 import { useState } from 'react';
 import pointerListenersMaker from 'helpers/PointerListeners';
@@ -33,8 +33,7 @@ const PhoneConnectionContextMenuItem = ({ item, isActive = false, dialPressed = 
         [styles.pressed]: pressedMenuItem || (dialPressed && isActive),
       })}
       {...pointerListenersMaker(setPressedMenuItem)}
-      onClick={action(() => phoneConnectionStore.phoneConnectionContextMenuUiState.handleActionMenuItemClick(item))}
-    >
+      onClick={action(() => phoneConnectionStore.phoneConnectionContextMenuUiState.handleActionMenuItemClick(item))}>
       <div className={styles.icon}>{getIcon(item)}</div>
       <Type name="canonBold" className={styles.label}>
         {item}

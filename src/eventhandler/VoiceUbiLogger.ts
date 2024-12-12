@@ -1,7 +1,7 @@
 import {
   CarVoiceViewCarthingosEventFactory,
   createCarVoiceViewCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-voice-view-carthingos/CarVoiceViewCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-voice-view-carthingos/CarVoiceViewCarthingosEventFactory';
 import UbiLogger from './UbiLogger';
 
 class VoiceUbiLogger {

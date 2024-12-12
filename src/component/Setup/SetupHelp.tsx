@@ -1,5 +1,5 @@
 import styles from './SetupHelp.module.scss';
-import { IconGears } from '@spotify-internal.old/encore-web';
+import { IconGears } from '@spotify-internal/encore-web';
 import { SetupView } from 'store/SetupStore';
 
 type Props = {

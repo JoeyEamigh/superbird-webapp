@@ -1,4 +1,4 @@
-import { IconSkipForward15 } from '@spotify-internal.old/encore-web';
+import { IconSkipForward15 } from '@spotify-internal/encore-web';
 
 const IconSeek15Forward48 = () => <IconSkipForward15 iconSize={48} />;
 

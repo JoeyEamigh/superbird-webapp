@@ -1,4 +1,4 @@
-import { IconPlusAlt } from '@spotify-internal.old/encore-web';
+import { IconPlusAlt } from '@spotify-internal/encore-web';
 
 const IconAddAlt48 = () => <IconPlusAlt iconSize={48} />;
 

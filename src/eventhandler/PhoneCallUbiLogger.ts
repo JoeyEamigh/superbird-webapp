@@ -2,7 +2,7 @@ import UbiLogger from './UbiLogger';
 import {
   CarPhoneCallCarthingosEventFactory,
   createCarPhoneCallCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-phone-call-carthingos';
+} from '@spotify-internal/ubi-sdk-music-car-phone-call-carthingos';
 
 class PhoneCallUbiLogger {
   ubiLogger: UbiLogger;

@@ -1,4 +1,4 @@
-import { IconPlaybackSpeed1x } from '@spotify-internal.old/encore-web';
+import { IconPlaybackSpeed1x } from '@spotify-internal/encore-web';
 
 const IconPlaybackSpeed1X48 = () => <IconPlaybackSpeed1x iconSize={48} />;
 

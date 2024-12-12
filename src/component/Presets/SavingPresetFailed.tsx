@@ -1,7 +1,7 @@
 import styles from 'component/Modals/Modal.module.scss';
 import savingPresetStyles from './SavingPresetFailed.module.scss';
 
-import { IconExclamationAlt } from '@spotify-internal.old/encore-web';
+import { IconExclamationAlt } from '@spotify-internal/encore-web';
 import Type from 'component/CarthingUIComponents/Type/Type';
 
 const SavingPresetFailed = () => {

@@ -2,12 +2,12 @@ import {
   UbiProd1ImpressionEvent,
   createUbiProd1Impression,
   UbiProd1ImpressionEventData,
-} from '@spotify-internal/event-definitions/es5/events/createUbiProd1Impression';
+} from '@spotify-internal/event-definitions/src/events/createUbiProd1Impression';
 import {
   UbiExpr5ImpressionNonAuthEvent,
   createUbiExpr5ImpressionNonAuth,
   UbiExpr5ImpressionNonAuthEventData,
-} from '@spotify-internal/event-definitions/es5/events/createUbiExpr5ImpressionNonAuth';
+} from '@spotify-internal/event-definitions/src/events/createUbiExpr5ImpressionNonAuth';
 import { UBIImpressionEvent } from '@spotify-internal.old/ubi-types-js';
 import { getParentPath, getParentSpecModes, getParentSpecVersions, getPathProps } from '../utils/EventUtils';
 import { EMPTY_STRING } from '../constants';

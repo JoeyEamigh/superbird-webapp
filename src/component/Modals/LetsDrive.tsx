@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { IconNowPlaying } from '@spotify-internal.old/encore-web';
+import { IconNowPlaying } from '@spotify-internal/encore-web';
 import styles from './ModalContent.module.scss';
 import classNames from 'classnames';
 import { useStore } from 'context/store';

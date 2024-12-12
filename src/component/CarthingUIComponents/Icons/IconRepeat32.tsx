@@ -1,4 +1,4 @@
-import { IconRepeat } from '@spotify-internal.old/encore-web';
+import { IconRepeat } from '@spotify-internal/encore-web';
 
 const IconRepeat32 = () => <IconRepeat iconSize={32} />;
 

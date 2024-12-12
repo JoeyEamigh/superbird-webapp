@@ -1,4 +1,4 @@
-import { IconBlock } from '@spotify-internal.old/encore-web';
+import { IconBlock } from '@spotify-internal/encore-web';
 
 const CarThingIconBlock = () => <IconBlock iconSize={48} />;
 

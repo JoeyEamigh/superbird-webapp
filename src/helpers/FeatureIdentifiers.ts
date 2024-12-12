@@ -1,4 +1,4 @@
-import { parseURI, URITypeMap } from '@spotify-internal.old/uri';
+import { parseURI, URITypeMap } from '@spotify-internal/uri';
 import VoiceStore from '../store/VoiceStore';
 import ShelfStore, { ShelfItem, VOICE_IDENTIFIER } from '../store/ShelfStore';
 import {

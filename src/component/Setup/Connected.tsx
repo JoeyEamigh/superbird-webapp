@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import styles from './Connected.module.scss';
-import { pink, aubergine } from '@spotify-internal.old/encore-foundation';
+import { pink, aubergine } from '@spotify-internal/encore-foundation';
 import { SetupView } from 'store/SetupStore';
 
 class Connected extends Component<{}, {}> {

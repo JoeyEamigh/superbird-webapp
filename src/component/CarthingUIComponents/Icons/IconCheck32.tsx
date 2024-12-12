@@ -1,4 +1,4 @@
-import { IconCheck } from '@spotify-internal.old/encore-web';
+import { IconCheck } from '@spotify-internal/encore-web';
 
 const IconCheck32 = () => <IconCheck iconSize={32} />;
 

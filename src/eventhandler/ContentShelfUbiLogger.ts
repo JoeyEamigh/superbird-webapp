@@ -1,7 +1,7 @@
 import {
   CarContentShelfCarthingosEventFactory,
   createCarContentShelfCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-content-shelf-carthingos/CarContentShelfCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-content-shelf-carthingos/CarContentShelfCarthingosEventFactory';
 import UbiLogger from './UbiLogger';
 
 class ContentShelfUbiLogger {

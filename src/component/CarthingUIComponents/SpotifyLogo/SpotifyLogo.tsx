@@ -1,4 +1,4 @@
-import { LogoSpotify } from '@spotify-internal.old/encore-web';
+import { LogoSpotify } from '@spotify-internal/encore-web';
 import './SpotifyLogo.scss';
 
 export type Props = {

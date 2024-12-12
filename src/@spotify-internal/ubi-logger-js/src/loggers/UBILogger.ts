@@ -6,12 +6,12 @@ import {
   NavigationStartInfo,
   UBIImpressionEvent,
   UBIInteractionEvent,
-} from '@spotify-internal.old/ubi-types-js';
-import { UbiProd1InteractionEvent } from '@spotify-internal/event-definitions/es5/events/createUbiProd1Interaction';
-import { UbiExpr6InteractionNonAuthEvent } from '@spotify-internal/event-definitions/es5/events/createUbiExpr6InteractionNonAuth';
-import { UbiProd1ImpressionEvent } from '@spotify-internal/event-definitions/es5/events/createUbiProd1Impression';
-import { UbiExpr5ImpressionNonAuthEvent } from '@spotify-internal/event-definitions/es5/events/createUbiExpr5ImpressionNonAuth';
-import { UbiExpr2PageViewEvent } from '@spotify-internal/event-definitions/es5/events/createUbiExpr2PageView';
+} from '@spotify-internal/ubi-types-js';
+import { UbiProd1InteractionEvent } from '@spotify-internal/event-definitions/src/events/createUbiProd1Interaction';
+import { UbiExpr6InteractionNonAuthEvent } from '@spotify-internal/event-definitions/src/events/createUbiExpr6InteractionNonAuth';
+import { UbiProd1ImpressionEvent } from '@spotify-internal/event-definitions/src/events/createUbiProd1Impression';
+import { UbiExpr5ImpressionNonAuthEvent } from '@spotify-internal/event-definitions/src/events/createUbiExpr5ImpressionNonAuth';
+import { UbiExpr2PageViewEvent } from '@spotify-internal/event-definitions/src/events/createUbiExpr2PageView';
 import { v4 as uuid } from 'uuid';
 import { PageInstanceIdProvider, UBIPageInstanceIdProvider } from '../providers/PageInstanceIdProvider';
 import { PlayContextUriProvider } from '../providers/PlayContextUriProvider';

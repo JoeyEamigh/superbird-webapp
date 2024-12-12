@@ -3,8 +3,8 @@ import { observer } from 'mobx-react-lite';
 import { useStore } from '../../../context/store';
 import { IconPublic } from '../../CarthingUIComponents';
 import { useEffect, useState } from 'react';
-import { IconSize } from '@spotify-internal.old/encore-web/types/src/core/components/Icon/Svg';
-import { IconCheck } from '@spotify-internal.old/encore-web';
+import { IconSize } from '@spotify-internal/encore-web/types/src/core/components/Icon/Svg';
+import { IconCheck } from '@spotify-internal/encore-web';
 import { runInAction } from 'mobx';
 
 const BANNER_ICON_SIZE: IconSize = 32;

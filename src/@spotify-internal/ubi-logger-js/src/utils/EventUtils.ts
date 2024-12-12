@@ -1,4 +1,4 @@
-import { EventAbsoluteLocation, PathNode } from '@spotify-internal.old/ubi-types-js';
+import { EventAbsoluteLocation, PathNode } from '@spotify-internal/ubi-types-js';
 import { EMPTY_STRING } from '../constants';
 
 function flatten(pathNodes: (PathNode | string)[][]) {

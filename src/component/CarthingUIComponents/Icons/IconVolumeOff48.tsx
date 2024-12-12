@@ -1,4 +1,4 @@
-import { IconVolumeOff } from '@spotify-internal.old/encore-web';
+import { IconVolumeOff } from '@spotify-internal/encore-web';
 
 const IconVolume48 = () => <IconVolumeOff iconSize={48} />;
 

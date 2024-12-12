@@ -1,4 +1,4 @@
-import { IconCheck } from '@spotify-internal.old/encore-web';
+import { IconCheck } from '@spotify-internal/encore-web';
 import classNames from 'classnames';
 import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
@@ -27,8 +27,7 @@ const PodcastSpeedItem = ({ speed, isActive = false }: Props) => {
       })}
       onClick={() => handSpeedItemClicked(speed)}
       {...pointerListenersMaker(setPressed)}
-      data-testid={`podcast-speed-item-${speed.toString()}`}
-    >
+      data-testid={`podcast-speed-item-${speed.toString()}`}>
       <Type name="canonBold" textColor="white">
         {speed}x
       </Type>

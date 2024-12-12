@@ -1,7 +1,7 @@
 import {
   CarPodcastSpeedViewCarthingosEventFactory,
   createCarPodcastSpeedViewCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-podcast-speed-view-carthingos/CarPodcastSpeedViewCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-podcast-speed-view-carthingos/CarPodcastSpeedViewCarthingosEventFactory';
 import UbiLogger from './UbiLogger';
 
 class PodcastSpeedOptionsUbiLogger {

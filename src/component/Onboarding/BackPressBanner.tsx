@@ -1,6 +1,6 @@
 import withStore from 'hocs/withStore';
 import styles from './BackPressBanner.module.scss';
-import { IconArrowRight } from '@spotify-internal.old/encore-web';
+import { IconArrowRight } from '@spotify-internal/encore-web';
 
 const BackPressBanner = () => {
   return (

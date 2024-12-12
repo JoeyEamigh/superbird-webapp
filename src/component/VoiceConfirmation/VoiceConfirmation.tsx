@@ -1,5 +1,5 @@
 import styles from './VoiceConfirmation.module.scss';
-import { IconCheck, IconHeartAltActive } from '@spotify-internal.old/encore-web';
+import { IconCheck, IconHeartAltActive } from '@spotify-internal/encore-web';
 import {
   ADD_TO_COLLECTION_INTENT,
   FOLLOW_INTENT,
@@ -32,7 +32,7 @@ import {
   IconShuffle,
   IconShuffleActive,
 } from 'component/CarthingUIComponents';
-import { IconSize } from '@spotify-internal.old/encore-web/types/src/core/components/Icon/Svg';
+import { IconSize } from '@spotify-internal/encore-web/types/src/core/components/Icon/Svg';
 
 export type Props = {
   intent: VoiceConfirmationIntent;

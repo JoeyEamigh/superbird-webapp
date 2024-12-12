@@ -1,17 +1,17 @@
 import {
   CarOnboardingStartCarthingosEventFactory,
   createCarOnboardingStartCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-onboarding-start-carthingos/CarOnboardingStartCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-onboarding-start-carthingos/CarOnboardingStartCarthingosEventFactory';
 
 import {
   CarOnboardingLearnVoiceCarthingosEventFactory,
   createCarOnboardingLearnVoiceCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-onboarding-learn-voice-carthingos/CarOnboardingLearnVoiceCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-onboarding-learn-voice-carthingos/CarOnboardingLearnVoiceCarthingosEventFactory';
 
 import {
   CarOnboardingLearnTactileCarthingosEventFactory,
   createCarOnboardingLearnTactileCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-onboarding-learn-tactile-carthingos/CarOnboardingLearnTactileCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-onboarding-learn-tactile-carthingos/CarOnboardingLearnTactileCarthingosEventFactory';
 
 import UbiLogger from 'eventhandler/UbiLogger';
 import { LearnVoiceStepId } from 'store/OnboardingStore';

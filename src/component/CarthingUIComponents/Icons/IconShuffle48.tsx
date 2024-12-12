@@ -1,4 +1,4 @@
-import { IconShuffle } from '@spotify-internal.old/encore-web';
+import { IconShuffle } from '@spotify-internal/encore-web';
 
 const IconShuffle48 = () => <IconShuffle iconSize={48} />;
 

@@ -1,4 +1,4 @@
-import { IconChevronRight } from '@spotify-internal.old/encore-web';
+import { IconChevronRight } from '@spotify-internal/encore-web';
 
 const IconChevronRight48 = () => <IconChevronRight iconSize={48} />;
 

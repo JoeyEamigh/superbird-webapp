@@ -1,7 +1,7 @@
 import {
   CarNowPlayingViewCarthingosEventFactory,
   createCarNowPlayingViewCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-now-playing-view-carthingos/CarNowPlayingViewCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-now-playing-view-carthingos/CarNowPlayingViewCarthingosEventFactory';
 import { SEEK_MS_PODCAST_EPISODE } from 'component/Npv/ControlButtons/ControlButtonsUiState';
 import UbiLogger from './UbiLogger';
 import { OptionsMenuItemId } from '../store/SettingsStore';

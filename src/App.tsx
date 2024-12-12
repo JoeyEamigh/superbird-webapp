@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { observer } from 'mobx-react-lite';
-import { GlobalStyles } from '@spotify-internal.old/encore-web';
+import { GlobalStyles } from '@spotify-internal/encore-web';
 import './App.scss';
 import OtaUpdating from 'component/OtaUpdating/OtaUpdating';
 import Main from 'component/Main';
@@ -31,8 +31,7 @@ const App = () => {
       data-testid="app"
       style={{
         opacity: `${nightModeController.nightModeUiState.appOpacity}`,
-      }}
-    >
+      }}>
       <img id="corners" alt="" src="images/round-corners.svg" />
       <GlobalStyles />
       <RootErrorBoundary>

@@ -1,7 +1,7 @@
 import {
   CarPresetsCarthingosEventFactory,
   createCarPresetsCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-presets-carthingos/CarPresetsCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-presets-carthingos/CarPresetsCarthingosEventFactory';
 import UbiLogger from './UbiLogger';
 import { PresetNumber } from 'store/PresetsDataStore';
 

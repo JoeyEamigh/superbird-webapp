@@ -1,9 +1,9 @@
-import { createUbiExpr2PageView } from '@spotify-internal/event-definitions/es5/events/createUbiExpr2PageView';
+import { createUbiExpr2PageView } from '@spotify-internal/event-definitions/src/events/createUbiExpr2PageView';
 import { v4 as uuidv4 } from 'uuid';
-import { NavigationEndInfo, NavigationReason, NavigationStartInfo } from '@spotify-internal.old/ubi-types-js';
+import { NavigationEndInfo, NavigationReason, NavigationStartInfo } from '@spotify-internal/ubi-types-js';
 import { EventSender } from './UBILogger';
 import { PageInstanceIdProvider } from '../providers/PageInstanceIdProvider';
-import { isNavigationByInteraction, isNavigationByReason } from '@spotify-internal.old/ubi-types-js';
+import { isNavigationByInteraction, isNavigationByReason } from '@spotify-internal/ubi-types-js';
 
 export enum NavigationEvents {
   NAVIGATION_IDLE = 'navigation_idle',

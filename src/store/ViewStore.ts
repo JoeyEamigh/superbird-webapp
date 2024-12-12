@@ -2,7 +2,7 @@ import { makeAutoObservable } from 'mobx';
 import { RootStore } from './RootStore';
 import { ContextItem, isSupportedUriType } from 'component/Tracklist/TracklistUiState';
 import { transitionDurationMs } from 'style/Variables';
-import { isStationURI } from '@spotify-internal.old/uri';
+import { isStationURI } from '@spotify-internal/uri';
 
 export enum AppView {
   LOGO,
@@ -96,7 +96,19 @@ class ViewStore {
   get appView(): AppView {
     const { setupStore, onboardingStore, hardwareStore, otaStore, persistentStorage, remoteConfigStore } =
       this.rootStore;
-    // console.log("will show screen? (all 3)" ,setupStore.hasStatusMessage, onboardingStore.onboardingMsgReceived, persistentStorage.seeded);
+
+    // console.log(
+    //   `setupStore.hasStatusMessage: ${setupStore.hasStatusMessage}\n` +
+    //     `onboardingStore.onboardingMsgReceived: ${onboardingStore.onboardingMsgReceived}\n` +
+    //     `persistentStorage.seeded: ${persistentStorage.seeded}\n` +
+    //     `remoteConfigStore.sunset: ${remoteConfigStore.sunset}\n` +
+    //     `hardwareStore.rebooting: ${hardwareStore.rebooting}\n` +
+    //     `setupStore.shouldShowSetup: ${setupStore.shouldShowSetup}\n` +
+    //     `otaStore.criticalUpdate: ${otaStore.criticalUpdate}\n` +
+    //     `otaStore.updateSuccess: ${otaStore.updateSuccess}\n` +
+    //     `onboardingStore.shouldShowOnboarding: ${onboardingStore.shouldShowOnboarding}`,
+    // );
+
     if (!setupStore.hasStatusMessage || !onboardingStore.onboardingMsgReceived || !persistentStorage.seeded) {
       return AppView.NOTHING;
     }

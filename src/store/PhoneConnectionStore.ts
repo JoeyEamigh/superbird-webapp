@@ -141,6 +141,13 @@ class PhoneConnectionStore {
     const { remoteControlStore, settingsStore, permissionsStore, sessionStateStore } = this.rootStore;
     const isNewConnected = this.isNewPairingModal && remoteControlStore.isNewPhoneConnected();
     const isSelectedConnected = remoteControlStore.isConnectedPhone(this.phoneToConnectOrForget?.address);
+
+    // console.log('isNewPairingModal:', this.isNewPairingModal);
+    // console.log('remoteControlStore.isNewPhoneConnected():', remoteControlStore.isNewPhoneConnected());
+    // console.log('phoneToConnectOrForget?.address:', this.phoneToConnectOrForget?.address);
+    // console.log('isNewConnected:', isNewConnected);
+    // console.log('isSelectedConnected:', isSelectedConnected);
+
     if (isNewConnected || isSelectedConnected) {
       this.clearPhoneConnectResponseTimeout();
       this.setPhoneConnectionModal(PhoneConnectionModalView.PHONE_SWITCH_SUCCESS);

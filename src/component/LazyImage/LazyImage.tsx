@@ -1,4 +1,4 @@
-import { parseURI, URITypeMap } from '@spotify-internal.old/uri';
+import { parseURI, URITypeMap } from '@spotify-internal/uri';
 import classNames from 'classnames';
 import Placeholder from 'component/LazyImage/Placeholder/Placeholder';
 import { useStore } from 'context/store';
@@ -165,8 +165,7 @@ const LazyImage = ({
           if (onClick) {
             onClick(e);
           }
-        }}
-      >
+        }}>
         {isRadioStationURI(uri) ? (
           <div
             className={styles.radioStation}
@@ -174,8 +173,7 @@ const LazyImage = ({
               if (onClick) {
                 onClick(e);
               }
-            }}
-          >
+            }}>
             <img src="images/radio-rings-bg.svg" className={styles.radioStationBg} alt="" />
             {getImageTag(image, 108, true)}
           </div>
@@ -198,8 +196,7 @@ const LazyImage = ({
             width: `${size}px`,
             height: `${size}px`,
             borderRadius: outerBorderRadius,
-          }}
-        >
+          }}>
           {component}
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { IconArrowRight } from '@spotify-internal.old/encore-web';
+import { IconArrowRight } from '@spotify-internal/encore-web';
 import { useStore } from 'context/store';
 import { SetupView } from 'store/SetupStore';
 import styles from './Welcome.module.scss';
@@ -13,8 +13,7 @@ const Welcome = () => {
         <div
           className={styles.buttonBackground}
           onPointerDown={setupStore.onContinueArrowClicked}
-          data-testid="setup-next"
-        >
+          data-testid="setup-next">
           <IconArrowRight className={styles.button} iconSize={16} />
         </div>
       </div>

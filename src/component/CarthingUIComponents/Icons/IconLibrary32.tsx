@@ -1,4 +1,4 @@
-import { IconCollection } from '@spotify-internal.old/encore-web';
+import { IconCollection } from '@spotify-internal/encore-web';
 
 const IconLibrary32 = () => <IconCollection iconSize={32} />;
 

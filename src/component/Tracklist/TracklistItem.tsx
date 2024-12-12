@@ -1,4 +1,4 @@
-import { IconDownloadAltActive, IconCheckAltActive, IconAddToQueue } from '@spotify-internal.old/encore-web';
+import { IconDownloadAltActive, IconCheckAltActive, IconAddToQueue } from '@spotify-internal/encore-web';
 import classNames from 'classnames';
 import LazyImage from 'component/LazyImage/LazyImage';
 import ProgressBar from './ProgressBar';
@@ -55,8 +55,7 @@ const TracklistItem = ({ item, isActive = false }: Props) => {
       })}
       onClick={handleTrackRowClicked}
       {...pointerListenersMaker(setPressed)}
-      data-testid={`tracklist-item-${item.uri}`}
-    >
+      data-testid={`tracklist-item-${item.uri}`}>
       {showImage && (
         <div className={styles.imageContainer}>
           <div className={styles.image} data-testid={`track-image-${item.uri}`}>
@@ -68,15 +67,13 @@ const TracklistItem = ({ item, isActive = false }: Props) => {
         className={classNames(styles.trackInfo, {
           [styles.showImage]: showImage,
         })}
-        data-testid={`track-info-${item.uri}`}
-      >
+        data-testid={`track-info-${item.uri}`}>
         <Type
           name="canonBold"
           className={classNames(styles.title, {
             [styles.currentlyPlaying]: isCurrent,
           })}
-          dataTestId={`${isActive ? 'track-title' : ''}`}
-        >
+          dataTestId={`${isActive ? 'track-title' : ''}`}>
           {item.title}
         </Type>
         <div className={styles.subtitleContainer}>
@@ -95,8 +92,7 @@ const TracklistItem = ({ item, isActive = false }: Props) => {
       <div
         className={styles.addToQueue}
         onClick={event => uiState.clickAddToQueue(event, item)}
-        data-testid={`${item.uri}-add-to-queue`}
-      >
+        data-testid={`${item.uri}-add-to-queue`}>
         <IconAddToQueue className={styles.addToQueueIcon} />
       </div>
     </div>

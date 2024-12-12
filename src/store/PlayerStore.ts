@@ -4,7 +4,7 @@ import { RootStore } from './RootStore';
 import Socket from '../Socket';
 import { ContextItem } from 'component/Tracklist/TracklistUiState';
 import { titleBasedOnType } from 'helpers/ContextTitleExtractor';
-import { isAdURI, isSearchURI, isShowURI, parseURI, URITypeMap } from '@spotify-internal.old/uri';
+import { isAdURI, isSearchURI, isShowURI, parseURI, URITypeMap } from '@spotify-internal/uri';
 import { QueueItem } from './QueueStore';
 import { isCollectionUri, isDjUri, DJ_URI } from 'helpers/SpotifyUriUtil';
 

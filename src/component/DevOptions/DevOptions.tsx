@@ -1,4 +1,4 @@
-import { ButtonPrimary, ButtonSecondary, FormToggle } from '@spotify-internal.old/encore-web';
+import { ButtonPrimary, ButtonSecondary, FormToggle } from '@spotify-internal/encore-web';
 import styles from './DevOptions.module.scss';
 import { observer } from 'mobx-react-lite';
 import { FETCH_IMAGES, OTA_NONE_CRITICAL_OPTION } from 'store/DevOptionsStore';
@@ -29,8 +29,7 @@ const DevOptions = () => {
         <FormToggle
           onChange={event => handleChange(event, FETCH_IMAGES)}
           checked={devOptionsStore.imageFetchEnabled}
-          className={styles.devOptionsToggle}
-        >
+          className={styles.devOptionsToggle}>
           Load Images
         </FormToggle>
         <label htmlFor="alert-threshold" className={styles.devOptionsCounting}>

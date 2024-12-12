@@ -1,4 +1,4 @@
-import { IconSkipBack } from '@spotify-internal.old/encore-web';
+import { IconSkipBack } from '@spotify-internal/encore-web';
 
 const IconSkipBack48 = () => <IconSkipBack iconSize={48} />;
 

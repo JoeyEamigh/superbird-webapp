@@ -1,4 +1,4 @@
-import { IconMicOff } from '@spotify-internal.old/encore-web';
+import { IconMicOff } from '@spotify-internal/encore-web';
 
 const IconMicOff64 = () => <IconMicOff iconSize={64} />;
 

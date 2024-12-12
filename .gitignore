@@ -38,3 +38,6 @@ next-env.d.ts
 
 @spotify-internal.old
 @spotify-internal.new
+
+# nix
+/result

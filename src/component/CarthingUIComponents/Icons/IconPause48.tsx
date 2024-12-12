@@ -1,4 +1,4 @@
-import { IconPause } from '@spotify-internal.old/encore-web';
+import { IconPause } from '@spotify-internal/encore-web';
 
 const IconPause48 = () => <IconPause iconSize={48} />;
 

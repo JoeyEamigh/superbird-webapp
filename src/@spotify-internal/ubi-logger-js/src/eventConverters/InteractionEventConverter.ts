@@ -2,11 +2,11 @@ import {
   UbiProd1InteractionEvent,
   createUbiProd1Interaction,
   UbiProd1InteractionEventData,
-} from '@spotify-internal/event-definitions/es5/events/createUbiProd1Interaction';
+} from '@spotify-internal/event-definitions/src/events/createUbiProd1Interaction';
 import {
   UbiExpr6InteractionNonAuthEvent,
   createUbiExpr6InteractionNonAuth,
-} from '@spotify-internal/event-definitions/es5/events/createUbiExpr6InteractionNonAuth';
+} from '@spotify-internal/event-definitions/src/events/createUbiExpr6InteractionNonAuth';
 import { UBIInteractionEvent } from '@spotify-internal.old/ubi-types-js';
 import { getParentPath, getParentSpecModes, getParentSpecVersions, getPathProps } from '../utils/EventUtils';
 import { EMPTY_STRING } from '../constants';

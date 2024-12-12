@@ -1,4 +1,4 @@
-import { IconHome } from '@spotify-internal.old/encore-web';
+import { IconHome } from '@spotify-internal/encore-web';
 
 const IconHome32 = () => <IconHome iconSize={32} />;
 

@@ -1,4 +1,4 @@
-import { IconArrowRight } from '@spotify-internal.old/encore-web';
+import { IconArrowRight } from '@spotify-internal/encore-web';
 import { useStore } from 'context/store';
 import withStore from 'hocs/withStore';
 import { runInAction } from 'mobx';

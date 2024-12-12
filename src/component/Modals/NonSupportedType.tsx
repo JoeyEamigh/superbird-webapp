@@ -1,4 +1,4 @@
-import { IconExclamationAlt } from '@spotify-internal.old/encore-web';
+import { IconExclamationAlt } from '@spotify-internal/encore-web';
 import LegacyModal from 'component/Modals/LegacyModal';
 import styles from './NonSupportedType.module.scss';
 

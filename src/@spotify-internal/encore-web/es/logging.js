@@ -1,5 +1,5 @@
 var _process, _process$env, _process2, _process2$env;
-import { deprecatedOverlayDirections, mapPhysicalToLogicalDirections } from './styles/mixins/overlays-deprecated';
+// import { deprecatedOverlayDirections, mapPhysicalToLogicalDirections } from './styles/mixins/overlays-deprecated';
 
 // For environment variables in webpack 5, see the "Runtime Errors" section of:
 // https://webpack.js.org/migrate/5/#run-a-single-build-and-follow-advice

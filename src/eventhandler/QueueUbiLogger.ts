@@ -2,7 +2,7 @@ import UbiLogger from './UbiLogger';
 import {
   CarQueueCarthingosEventFactory,
   createCarQueueCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-queue-carthingos';
+} from '@spotify-internal/ubi-sdk-music-car-queue-carthingos';
 
 class QueueUbiLogger {
   ubiLogger: UbiLogger;

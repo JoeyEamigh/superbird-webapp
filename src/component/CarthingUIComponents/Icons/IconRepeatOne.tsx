@@ -1,4 +1,4 @@
-import { IconRepeatOnce } from '@spotify-internal.old/encore-web';
+import { IconRepeatOnce } from '@spotify-internal/encore-web';
 
 interface Props {
   className?: string;

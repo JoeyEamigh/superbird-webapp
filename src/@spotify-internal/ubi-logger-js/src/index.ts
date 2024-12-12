@@ -1,2 +1,2 @@
 export { UBI } from './ubi';
-export { EventSender, EventSenderOptions, UBILogger } from './loggers/UBILogger';
+export { type EventSender, type EventSenderOptions, UBILogger } from './loggers/UBILogger';

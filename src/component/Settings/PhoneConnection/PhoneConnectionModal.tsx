@@ -4,7 +4,7 @@ import styles from '../../Modals/Modal.module.scss';
 import { useStore } from 'context/store';
 import { PhoneConnectionModalView } from 'store/PhoneConnectionStore';
 import Spinner, { SpinnerSize } from '../../CarthingUIComponents/Spinner/Spinner';
-import { IconCheck } from '@spotify-internal.old/encore-web';
+import { IconCheck } from '@spotify-internal/encore-web';
 import Overlay, { FROM } from '../../Overlays/Overlay';
 import { observer } from 'mobx-react-lite';
 import PremiumAccountRequired from '../../Modals/PremiumAccountRequired';

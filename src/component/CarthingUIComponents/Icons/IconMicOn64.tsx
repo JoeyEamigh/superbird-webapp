@@ -1,4 +1,4 @@
-import { IconMicrophone } from '@spotify-internal.old/encore-web';
+import { IconMicrophone } from '@spotify-internal/encore-web';
 
 const IconMicOn64 = () => <IconMicrophone iconSize={64} />;
 

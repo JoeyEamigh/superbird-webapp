@@ -1,5 +1,5 @@
-import { IconX } from '@spotify-internal.old/encore-web';
-import { IconSize } from '@spotify-internal.old/encore-web/es/components/Icon/Svg';
+import { IconX } from '@spotify-internal/encore-web';
+import { IconSize } from '@spotify-internal/encore-web/es/components/Icon/Svg';
 import { useStore } from 'context/store';
 import { observer } from 'mobx-react-lite';
 import { PropsWithChildren } from 'react';

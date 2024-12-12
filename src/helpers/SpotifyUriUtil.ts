@@ -1,4 +1,4 @@
-import { isEpisodeURI, isTrackURI, parseURI, URITypeMap } from '@spotify-internal.old/uri';
+import { isEpisodeURI, isTrackURI, parseURI, URITypeMap } from '@spotify-internal/uri';
 
 export const DJ_URI = 'spotify:playlist:37i9dQZF1EYkqdzj48dyYq';
 

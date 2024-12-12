@@ -1,5 +1,5 @@
 import PlayerStore from 'store/PlayerStore';
-import { isAdURI, URITypeMap } from '@spotify-internal.old/uri';
+import { isAdURI, URITypeMap } from '@spotify-internal/uri';
 import QueueStore from 'store/QueueStore';
 import { isRadioStationURI } from 'helpers/SpotifyUriUtil';
 

@@ -10,7 +10,7 @@ import {
   isTrackURI,
   parseURI,
   URITypeMap,
-} from '@spotify-internal.old/uri';
+} from '@spotify-internal/uri';
 import { titleBasedOnType } from 'helpers/ContextTitleExtractor';
 import { getTrackViewFeatureIdentifier } from 'helpers/FeatureIdentifiers';
 import { HOME_IDENTIFIER } from 'store/ShelfStore';

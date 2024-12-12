@@ -1,7 +1,7 @@
 import {
   CarNowPlayingViewOtherMediaCarthingosEventFactory,
   createCarNowPlayingViewOtherMediaCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-now-playing-view-other-media-carthingos';
+} from '@spotify-internal/ubi-sdk-music-car-now-playing-view-other-media-carthingos';
 import UbiLogger from 'eventhandler/UbiLogger';
 import { OptionsMenuItemId } from 'store/SettingsStore';
 

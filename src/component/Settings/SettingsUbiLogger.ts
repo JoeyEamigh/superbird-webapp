@@ -1,7 +1,7 @@
 import {
   CarSettingsCarthingosEventFactory,
   createCarSettingsCarthingosEventFactory,
-} from '@spotify-internal.old/ubi-sdk-music-car-settings-carthingos/CarSettingsCarthingosEventFactory';
+} from '@spotify-internal/ubi-sdk-music-car-settings-carthingos/CarSettingsCarthingosEventFactory';
 import UbiLogger from 'eventhandler/UbiLogger';
 import { MainMenuItemId, OptionsMenuItemId, RestartMenuItemId } from 'store/SettingsStore';
 

@@ -1,5 +1,5 @@
 import UbiLogger from 'eventhandler/UbiLogger';
-import { createCarNightModeCarthingosEventFactory } from '@spotify-internal.old/ubi-sdk-music-car-night-mode-carthingos';
+import { createCarNightModeCarthingosEventFactory } from '@spotify-internal/ubi-sdk-music-car-night-mode-carthingos';
 
 class NightModeUbiLogger {
   ubiLogger: UbiLogger;
