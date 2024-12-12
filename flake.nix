@@ -24,7 +24,7 @@
         inherit (gitignore.lib) gitignoreSource;
 
         node_modules = stdenv.mkDerivation {
-          pname = "superbird-webapp_node-modules";
+          pname = "superbird-webapp_node-modules_${system}";
           version = "8.9.2-thinglabs-0.0.1";
           src = gitignoreSource ./.;
 
@@ -54,7 +54,13 @@
             runHook postInstall
           '';
 
-          outputHash = if stdenv.isLinux then "sha256-4yX9/pCkG8m0uZt5CxTC7Z6KmPCdhgrJkXJ9fHiXz6s=" else "";
+          outputHash =
+            if stdenv.isLinux && system == "x86_64" then
+              "sha256-4yX9/pCkG8m0uZt5CxTC7Z6KmPCdhgrJkXJ9fHiXz6s="
+            else if stdenv.isLinux && system == "x86_64" then
+              "sha256-NMn9iqvbEmMEqN6IsHLFlkQKEbzSGkbw6MscKoJYuWY="
+            else
+              "";
           outputHashAlgo = "sha256";
           outputHashMode = "recursive";
         };
