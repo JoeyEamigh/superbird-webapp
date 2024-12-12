@@ -23,6 +23,16 @@
         stdenv = pkgs.stdenv;
         inherit (gitignore.lib) gitignoreSource;
 
+        archMap = {
+          "x86_64-linux" = {
+            hash = "sha256-4yX9/pCkG8m0uZt5CxTC7Z6KmPCdhgrJkXJ9fHiXz6s=";
+          };
+          "aarch64-linux" = {
+            hash = "sha256-NMn9iqvbEmMEqN6IsHLFlkQKEbzSGkbw6MscKoJYuWY=";
+          };
+        };
+        arch = archMap.${system} or (throw "Unsupported system: ${system}");
+
         node_modules = stdenv.mkDerivation {
           pname = "superbird-webapp_node-modules_${system}";
           version = "8.9.2-thinglabs-0.0.1";
@@ -54,13 +64,7 @@
             runHook postInstall
           '';
 
-          outputHash =
-            if stdenv.isLinux && system == "x86_64" then
-              "sha256-4yX9/pCkG8m0uZt5CxTC7Z6KmPCdhgrJkXJ9fHiXz6s="
-            else if stdenv.isLinux && system == "x86_64" then
-              "sha256-NMn9iqvbEmMEqN6IsHLFlkQKEbzSGkbw6MscKoJYuWY="
-            else
-              "";
+          outputHash = arch.hash;
           outputHashAlgo = "sha256";
           outputHashMode = "recursive";
         };
