@@ -42,6 +42,7 @@ export enum AboutMenuItemId {
   DISCORD = 'DISCORD',
   CREDITS = 'CREDITS',
   COUNTRY = 'COUNTRY',
+  FW_VERSION = 'FW_VERSION',
   FCC_ID_MODEL_NAME = 'FCC_ID_MODEL_NAME',
   IC_ID_MODEL_NAME = 'IC_ID_MODEL_NAME',
   HVIN = 'HVIN',
@@ -229,6 +230,13 @@ class SettingsStore {
     {
       id: AboutMenuItemId.CREDITS,
       label: 'Credits',
+      index: 0,
+      visible: () => true,
+      type: 'key-value',
+    },
+    {
+      id: AboutMenuItemId.FW_VERSION,
+      label: 'Firmware',
       index: 0,
       visible: () => true,
       type: 'key-value',

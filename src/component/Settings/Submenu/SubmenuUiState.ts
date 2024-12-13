@@ -10,6 +10,7 @@ type AboutValues = {
   serial: string;
   app_version: string;
   os_version: string;
+  fw_version: string;
   country: string;
   model_name: string;
   fcc_id: string;

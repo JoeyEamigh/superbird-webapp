@@ -11,7 +11,7 @@ type VersionStatus = {
   os_version: string;
   country: string;
   app_version: string;
-  touch_fw_version: string;
+  fw_version: string;
   model_name: string;
   fcc_id: string;
   ic_id: string;
