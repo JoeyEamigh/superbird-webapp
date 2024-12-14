@@ -45,3 +45,4 @@ next-env.d.ts
 # other package managers for non-bun PLEBS
 package-lock.json
 yarn.lock
+bun.lockb
